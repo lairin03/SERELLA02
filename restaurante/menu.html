@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - LUXE Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>LUXE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="menu.html" class="nav-link active">Menú</a></li>
+                <li><a href="index.html#galeria" class="nav-link">Galería</a></li>
+                <li><a href="index.html#reservas" class="nav-link">Reservas</a></li>
+                <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="menu" style="padding-top: 12rem;">
+        <div class="section-header">
+            <h2>Menú LUXE</h2>
+            <p>Disfruta de la vista exclusiva del menú en una sola página dedicada.</p>
+        </div>
+
+        <div class="menu-filters" role="tablist" aria-label="Seleccionar categoría del menú">
+            <button class="filter-btn active" data-filter="todos" role="tab">Todos</button>
+            <button class="filter-btn" data-filter="entrada" role="tab">Entradas</button>
+            <button class="filter-btn" data-filter="principal" role="tab">Principales</button>
+            <button class="filter-btn" data-filter="postre" role="tab">Postres</button>
+            <button class="filter-btn" data-filter="bebida" role="tab">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" role="tabpanel">
+            <div class="menu-item entrada" data-price="180">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Camarones en oro" loading="lazy"></div>
+                <h3>Camarones Envueltos en Oro</h3>
+                <p>Camarones frescos con láminas de oro comestible, salsa de miso y microvegetales</p>
+                <div class="item-footer">
+                    <span class="price">$180</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item entrada" data-price="220">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Ostras frescas" loading="lazy"></div>
+                <h3>Ostras Perladas</h3>
+                <p>Ostras frescas del día con perlas de cítrico y espuma de champagne</p>
+                <div class="item-footer">
+                    <span class="price">$220</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item entrada" data-price="160">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80" alt="Tartar de atún" loading="lazy"></div>
+                <h3>Tartar de Atún Rojo</h3>
+                <p>Atún rojo premium cortado al momento con aguacate, cítricos y trufa negra</p>
+                <div class="item-footer">
+                    <span class="price">$160</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item principal" data-price="380">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1532634896-26909d0d1d5d?auto=format&fit=crop&w=800&q=80" alt="Wagyu steak" loading="lazy"></div>
+                <h3>Wagyu Prime Majestic</h3>
+                <p>Corte de Wagyu 5 estrellas a la parrilla con salsa de red wine y tubérculos selectos</p>
+                <div class="item-footer">
+                    <span class="price">$380</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item principal" data-price="350">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=800&q=80" alt="Lubina mediterránea" loading="lazy"></div>
+                <h3>Lubina Mediterránea</h3>
+                <p>Lubina salvaje al horno con hierbas aromáticas, aceitunas kalamata y limón Meyer</p>
+                <div class="item-footer">
+                    <span class="price">$350</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item principal" data-price="340">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80" alt="Langosta" loading="lazy"></div>
+                <h3>Langosta Real Envolvente</h3>
+                <p>Langosta roja con mantequilla trufada, sabayón de azafrán y caviar de salmón</p>
+                <div class="item-footer">
+                    <span class="price">$340</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item postre" data-price="140">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Esfera de chocolate" loading="lazy"></div>
+                <h3>Esfera de Chocolate</h3>
+                <p>Esfera de chocolate negro 85% rellena de crema pastelera de vainilla y aire de frambuesa</p>
+                <div class="item-footer">
+                    <span class="price">$140</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item postre" data-price="130">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=800&q=80" alt="Mousse de frutos rojos" loading="lazy"></div>
+                <h3>Mousses de Frutos Rojos</h3>
+                <p>Trío de mousses: fresa, mora y frambuesa con brillo de espejo</p>
+                <div class="item-footer">
+                    <span class="price">$130</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item postre" data-price="160">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80" alt="Flan de lúcuma" loading="lazy"></div>
+                <h3>Flan de Lúcuma Sagrada</h3>
+                <p>Flan artesanal de lúcuma con caramelo de maicena y espuma de ajo negro</p>
+                <div class="item-footer">
+                    <span class="price">$160</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item bebida" data-price="85">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80" alt="Champagne" loading="lazy"></div>
+                <h3>Champagne Dom Pérignon</h3>
+                <p>Champagne rosado vintage, las burbujas más finas del mundo</p>
+                <div class="item-footer">
+                    <span class="price">$85</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item bebida" data-price="120">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80" alt="Vino tinto" loading="lazy"></div>
+                <h3>Vino Tinto Reserva Exclusiva</h3>
+                <p>Vino tinto de cosecha limitada, 15 años de envejecimiento</p>
+                <div class="item-footer">
+                    <span class="price">$120</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="menu-item bebida" data-price="45">
+                <div class="item-image"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Café espresso" loading="lazy"></div>
+                <h3>Café Espresso Artesanal</h3>
+                <p>Café de granos seleccionados tostados a mano</p>
+                <div class="item-footer">
+                    <span class="price">$45</span>
+                    <button class="add-cart-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Restaurante Gastronómico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR FLOTANTE -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>LUXE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="menu.html" class="nav-link">Menú</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#reservas" class="nav-link">Reservas</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">LUXE</h1>
+            <p class="hero-subtitle">Experiencia Gastronómica de Lujo</p>
+            <p class="hero-description">Donde cada plato es una obra maestra y cada momento es inolvidable</p>
+            <button class="cta-button" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                Descubre Nuestro Menú
+            </button>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card card-1">🍽️</div>
+            <div class="floating-card card-2">🥂</div>
+            <div class="floating-card card-3">🌟</div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MENÚ/CATÁLOGO -->
+    <!-- SECCIÓN GALERÍA -->
+    <section id="galeria" class="galeria">
+        <div class="section-header">
+            <h2>Galería</h2>
+            <p>Momentos memorables en LUXE</p>
+        </div>
+
+        <div class="galeria-grid">
+            <div class="galeria-item galeria-large" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Ambiente Premium</p>
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Platos Exquisitos</p>
+                    <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Experiencia Única</p>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Chef Maestro</p>
+                    <i class="fas fa-user-chef"></i>
+                </div>
+            </div>
+
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Cena Romántica</p>
+                    <i class="fas fa-ring"></i>
+                </div>
+            </div>
+
+            <div class="galeria-item galeria-large" style="background-image: url('https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=1200&q=80');">
+                <div class="galeria-overlay">
+                    <p>Sunset Especial</p>
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section class="testimonios">
+        <div class="section-header">
+            <h2>Lo Que Dicen Nuestros Clientes</h2>
+            <p>Historias de experiencias inolvidables</p>
+        </div>
+
+        <div class="testimonios-grid">
+            <div class="testimonio-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonio-text">"La experiencia más hermosa de mi vida. Cada platillo fue como una sinfonía en mi paladar. Simplemente divino."</p>
+                <div class="cliente-info">
+                    <div class="avatar">👑</div>
+                    <div>
+                        <p class="cliente-nombre">María Valentina</p>
+                        <p class="cliente-ciudad">Madrid, España</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonio-text">"Propuse matrimonio aquí. El ambiente, la comida, el servicio... todo fue perfecto. La mejor noche de nuestras vidas."</p>
+                <div class="cliente-info">
+                    <div class="avatar">💕</div>
+                    <div>
+                        <p class="cliente-nombre">Carlos & Elena</p>
+                        <p class="cliente-ciudad">Barcelona, España</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonio-text">"Soy crítico gastronómico con 30 años de experiencia. LUXE redefinió mis expectativas. Masterpiece puro."</p>
+                <div class="cliente-info">
+                    <div class="avatar">🎩</div>
+                    <div>
+                        <p class="cliente-nombre">Roberto Gourmet</p>
+                        <p class="cliente-ciudad">París, Francia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN RESERVAS -->
+    <section id="reservas" class="reservas">
+        <div class="section-header">
+            <h2>Reserva Tu Mesa</h2>
+            <p>Asegura tu lugar en nuestro exclusivo restaurante</p>
+        </div>
+
+        <form class="reserva-form" id="reservaForm">
+            <div class="form-group">
+                <input type="text" placeholder="Tu Nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Tu Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Tu Teléfono" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Número de Personas" min="1" max="12" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Observaciones especiales (opcional)" rows="3"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <!-- CARRITO FLOTANTE -->
+    <div class="cart-floating">
+        <button class="cart-btn" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </button>
+    </div>
+
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>Tu Pedido</h3>
+            <button class="close-cart" onclick="toggleCart()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="totalPrice">0</span></p>
+        </div>
+    </div>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="section-header">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros</p>
+        </div>
+
+        <div class="contacto-content">
+            <div class="contacto-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Ubicación</h4>
+                    <p>Avenida Luxury, 1000<br>Nueva York, NY 10001</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Teléfono</h4>
+                    <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>info@luxerestaurant.com<br>reservas@luxerestaurant.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Horario</h4>
+                    <p>Martes - Jueves: 18:00 - 23:00<br>Viernes - Domingo: 18:00 - 24:00</p>
+                </div>
+            </div>
+
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 LUXE - Experiencia Gastronómica Premium. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Política de Cancelación</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
